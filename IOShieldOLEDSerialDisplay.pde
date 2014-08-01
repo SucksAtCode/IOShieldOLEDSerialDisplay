@@ -11,8 +11,6 @@
 String readString;
 
 void setup(){
-    // set up the LCD's number of columns and rows:
-  // initialize the serial communications:
   Serial.begin(9600);
   IOShieldOled.begin();
   IOShieldOled.displayOn();
@@ -24,9 +22,6 @@ void loop()
   if (Serial.available()) {
     // wait a bit for the entire message to arrive
     delay(100);
-    // clear the screen
-
-    // read all the available characters
     while (Serial.available()) {
         delay(10);
 
